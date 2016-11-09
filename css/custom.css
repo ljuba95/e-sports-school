@@ -1,0 +1,98 @@
+body {
+    margin-top: 50px;
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+	background: url('http://res.cloudinary.com/lmn/image/upload/c_limit,e_sharpen:150,f_auto,fl_lossy,h_360,q_80,w_640/v1/gameskinnyc/e/s/p/esports-banner-2ab5e.jpg') no-repeat center center scroll;
+    padding: 100px 0;
+}
+
+.image-bg-fixed-height {
+	background: url('http://res.cloudinary.com/lmn/image/upload/c_limit,e_sharpen:150,f_auto,fl_lossy,h_360,q_80,w_640/v1/gameskinnyc/e/s/p/esports-banner-2ab5e.jpg') no-repeat center center scroll;
+    height: 450px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
+#bs-example-navbar-collapse-1 a{
+    color: #34B5BA;
+}
+#bs-example-navbar-collapse-1 a:hover{
+    color: #30FFE2;
+}
+#font-color{
+    color: #34B5BA;
+}
+#font-color:hover{
+    color: #30FFE2;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    height: 100%;
+}
+.bx-viewport, .bx-wrapper{
+    position:relative;
+    width:absolute;
+    height:100% !important;
+    top:0;
+    left:0;
+}
+.bxslider, .bxslider li{
+    height: 100% !important;
+    max-width: 100% !important;
+}
+.bxslider li{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.bx-wrapper .bx-viewport{
+    border: none !important;
+}
