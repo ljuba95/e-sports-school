@@ -17,12 +17,13 @@ body {
 }
 
 .image-bg-fixed-height {
-	background: url('http://res.cloudinary.com/lmn/image/upload/c_limit,e_sharpen:150,f_auto,fl_lossy,h_360,q_80,w_640/v1/gameskinnyc/e/s/p/esports-banner-2ab5e.jpg') no-repeat center center scroll;
+	background: url('../images/Logo.png') no-repeat center center scroll;
     height: 450px;
 }
 
 .img-center {
 	margin: 0 auto;
+    display: block;
 }
 
 section {
@@ -41,9 +42,16 @@ section {
 .section-paragraph {
     margin: 30px 0;
 }
+/* fooooooooooobar */
 
-footer {
-    margin: 50px 0;
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px){
+    footer { position: static; }
+    header { padding-top:40px; }
 }
 
 @media(max-width:768px) {
@@ -56,6 +64,9 @@ footer {
         font-size: 2em;
     }
 }
+
+/* fakin slider */
+
 #bs-example-navbar-collapse-1 a{
     color: #34B5BA;
 }
@@ -96,3 +107,13 @@ body, html{
 .bx-wrapper .bx-viewport{
     border: none !important;
 }
+.slider-textbox{
+    display:block;
+    position:absolute;
+    background-color:white;
+    opacity:80%;
+    width:30%;
+    float:center;
+
+}
+
