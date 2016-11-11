@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="e-sport-school">
     <meta name="author" content="inffoot">
+	<title>E-Sport School - Upis</title>
 
-    <title>E-Sport School</title>
-
-    <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Nas CSS -->
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- bxSlider CSS -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- Fooooooooter CSS yo -->
     <link rel="stylesheet" href="css/footer.css">
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
-
-    <!-- Navigation -->
+	<!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top fml" role="navigation" >
         <div class="container">
             <div class="navbar-header">
@@ -43,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"  href="#" id="font-color"><strong>E-SPORT SCHOOL</strong></a>
+                <a class="navbar-brand"  href="index.html" id="font-color"><strong>E-SPORT SCHOOL</strong></a>
                 <!-- ovde bi trebalo da ide slika -->
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -69,44 +57,54 @@
         </div>
         <!-- /.container -->
     </nav>
+    <div class="container upis">
+    	<div class="row">
+    		<div class="col-md-6">
+		    <form action="success.html">
 
-    <!-- slajder -->
-    
-    <ul class="bxslider">
-        
-        <li style="background-image: url('http://esports.inquirer.net/wp-content/uploads/2015/03/katowice2015_announcement_01.jpg');"></li>
-        <li style="background-image: url('http://cdn.dota2.com/apps/dota2/images/blogfiles/ti6_compendium_update.jpg');"></li>
-        <li style="background-image: url('http://s3.amazonaws.com/digitaltrends-uploads-prod/2015/08/dota-2-the-international-6.jpg');"></li>
-        <li style="background-image: url('https://cdn0.vox-cdn.com/thumbor/W6a_pgSkVrcl-5V2U-UOnsVBjFM=/356x0:1244x500/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/47846167/league_of_legends_world_championship_2015.0.0.jpg');"></li>
-    </ul>
+			  <div class="form-group">
+			    <label for="emailForm">E-mail adresa</label>
+			    <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp" placeholder="Unesite vas e-mail">
+			    <small id="emailHelp" class="form-text text-muted"></small>
+			  </div>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="section-heading">Section Heading</h1>
-                    <p class="lead section-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+			  <div class="form-group">
+			    <label for="password">Sifra</label>
+			    <input type="password" class="form-control" id="password" placeholder="Sifra">
+			  </div>
 
-    <div class="container">
-        <div class="row">
-            <img src="images/Logo.png" class="img-center" width="350px" height="350px">
-        </div>
-    </div>
+			  <div class="form-group">
+			    <label for="select">Izaberite igru</label>
+			    <select class="form-control" id="select">
+			      <option>League of Legends</option>
+			      <option>Counter Strike: Global Offensive</option>
+			      <option>Starcraft 2</option>
+			      <option>Hearthstone</option>
+			      <option>DOTA 2</option>
+			    </select>
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="exampleInputFile">Video snimak</label>
+			    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+			    <small id="fileHelp" class="form-text text-muted">Mozete upload-ovati neki vas snimak iz igre, ali nije obavezno.</small>
+			  </div>
 
-    <!-- Footer -->
-    <footer class="footer-main ">
+			  <button type="submit" class="btn btn-info btn-lg">Prijavi se!</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+    <footer class="footer-main">
 
             <div class="footer-left">
 
                 <h3>E-Sport<span> school</span></h3>
 
                 <p class="footer-links">
-                    <a href="#">Pocetna</a>
+                    <a href="index.html">Pocetna</a>
                     ·
                     <a href="#">O nama</a>
                     ·
@@ -148,12 +146,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.min.js"></script>
-
     <!-- nas js -->
     <script src="js/app.js"></script>
 
-</body>
 
+
+</body>
 </html>
