@@ -46,7 +46,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.img-center').on({
+	$('#img-blur').on({
     'mouseover' : function() {
       	$(this).attr('src','images/LogoBlur.png');
     },

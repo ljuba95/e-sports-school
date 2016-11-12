@@ -121,3 +121,19 @@ body, html{
     padding-top: 20px;
 }
 
+.footer-links a:hover{
+    color: #30FFE2 !important;
+}
+
+#footer-logo{
+    margin: 0 auto;
+    display: block;
+}
+
+.footer-button:hover{
+    background-color: white !important;
+}
+
+.footer-icons a:hover{
+    background-color: white !important;
+}
