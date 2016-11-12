@@ -121,6 +121,10 @@ body, html{
     padding-top: 20px;
 }
 
+.footer-links a{
+    color: #34B5BA !important;
+}
+
 .footer-links a:hover{
     color: #30FFE2 !important;
 }
@@ -131,9 +135,40 @@ body, html{
 }
 
 .footer-button:hover{
-    background-color: white !important;
+    background-color: #30FFE2 !important;
 }
 
 .footer-icons a:hover{
-    background-color: white !important;
+    background-color: #30FFE2 !important;
 }
+
+.footer-links span{
+    color: #34B5BA !important;
+}
+
+.footer-right p{
+    color: #34B5BA !important;
+}
+
+input[type=text], textarea {
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px #30FFE2;
+  border: 1px #30FFE2;
+}
+
+textarea[id=message], textarea {
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+ 
+textarea[id=message]:focus, textarea:focus {
+  box-shadow: 0 0 5px #30FFE2;
+  border: 1px #30FFE2;
+}
+
+
+
