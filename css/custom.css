@@ -170,5 +170,35 @@ textarea[id=message]:focus, textarea:focus {
   border: 1px #30FFE2;
 }
 
+input[type=email], textarea {
+  outline: none ;
+  border: 1px solid #DDDDDD ;
+}
+ 
+input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 5px #34B5BA ;
+  border: 1px #34B5BA ;
+}
+
+input[type=password], textarea {
+  outline: none ;
+  border: 1px solid #DDDDDD ;
+}
+ 
+input[type=password]:focus, textarea:focus {
+  box-shadow: 0 0 5px #34B5BA ;
+  border: 1px #34B5BA ;
+}
+
+select[class=form-control], textarea {
+  outline: none ;
+  border: 1px solid #DDDDDD ;
+}
+ 
+select[class=form-control]:focus, textarea:focus {
+  box-shadow: 0 0 5px #34B5BA ;
+  border: 1px #34B5BA ;
+}
+
 
 
