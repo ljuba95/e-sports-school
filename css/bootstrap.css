@@ -3228,9 +3228,8 @@ fieldset[disabled] .btn-success.focus {
   background-color: #fff;
 }
 .btn-info {
-  color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  color: #34B5BA;
+  background-color: #5c666b;
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -3239,9 +3238,8 @@ fieldset[disabled] .btn-success.focus {
   border-color: #1b6d85;
 }
 .btn-info:hover {
-  color: #fff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  color: #33383b;
+  background-color: #30FFE2;
 }
 .btn-info:active,
 .btn-info.active,

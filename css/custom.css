@@ -135,10 +135,12 @@ body, html{
 }
 
 .footer-button:hover{
+    color: #33383b !important;
     background-color: #30FFE2 !important;
 }
 
 .footer-icons a:hover{
+    color: #33383b !important;
     background-color: #30FFE2 !important;
 }
 
