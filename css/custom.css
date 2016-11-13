@@ -243,5 +243,16 @@ select[class=form-control]:focus, textarea:focus {
   margin-top: -60px;
 }
 
+.onama{
+  color: #33383b;
+}
+
+.NoviGod{
+  width: 200px; height: 200px;
+}
+
+.TheChosenOne{
+  width: 200px; height: 200px;
+}
 
 
