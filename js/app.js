@@ -22,12 +22,43 @@ $(document).ready(function(){
 
 	if(location.pathname.includes('upis')){
 
-		if(location.search !== ""){
+		var injectHtml;
+
+		if(location.search != ""){
 			$('#select').val(location.search[1]);
 			$('#select').css("box-shadow","0 0 5px #34B5BA");
+
+			switch (location.search[1]){
+				case "1":
+					injectHtml = '<div class="col-md-3"><img src="images/old/LOL.png" height="150px" width="150px" class="center-block" style="margin-top:10px;"></div>' + 
+					'<div class="col-md-5">HELOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO\nLOLOLOLOLOLOLOLOL</div>';
+					break;
+				case "2":
+					injectHtml = 'todo';
+					break;
+
+				case "3":
+					injectHtml = 'todo';
+					break;
+
+				case "4":
+					injectHtml = 'todo';
+					break;
+
+				case "5":
+					injectHtml = 'todo';
+					break;
+
+				default:
+					alert('should never appear! go away!');
+					break;
+			}
+
+			$('.opis').append(injectHtml);
 		}
 
-		//idemo dalje
+		
+		
 	}
 
 	//==============validacije====================================
@@ -88,7 +119,7 @@ $(document).ready(function(){
 	}
 
 	//get rid of spaghetti code YESSSSSSSS
-
+	//slike, hoveri, resize
 	function addBlur(src){
 		return src.slice(0,src.length-4) + 'Blur.png';
 	}
@@ -126,5 +157,9 @@ $(document).ready(function(){
     }
   });
 
-	
+	$('#contact').on('click',function(){
+		$("html, body").animate({ scrollTop: $(".footer-right").offset().top }, 'slow', function(){
+			$('.footer-right').css("box-shadow","0 0 5px #34B5BA");
+		});
+	});
 });
