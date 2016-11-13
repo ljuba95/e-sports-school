@@ -204,5 +204,42 @@ select[class=form-control]:focus, textarea:focus {
   border: 1px #34B5BA ;
 }
 
+/* slike igrica */
 
+#img-blur:hover{
+  z-index: -1;
+  transition: 0.4s -webkit-filter linear;
+  -webkit-filter: blur(3px);
+}
+#dota2, #LOL, #CSGO, #HS, #SC2{
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  width: 150px; height: 150px;
+}
+
+#dota2{
+  margin-left: 670px;
+  margin-top: -40px;
+}
+
+#LOL{
+  margin-left: 700px;
+  margin-top: 200px;
+}
+
+#CSGO{
+  margin-left: 480px;
+  margin-top: 310px;
+}
+
+#HS{
+  margin-left: 300px;
+  margin-top: 150px;
+}
+
+#SC2{
+  margin-left: 370px;
+  margin-top: -60px;
+}
 
