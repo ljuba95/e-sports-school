@@ -11,7 +11,6 @@ $(document).ready(function(){
 		$('#select').css("box-shadow","0 0 5px #34B5BA");
 	}
 
-	console.log($(window).width());
 	//==============validacije====================================
 
 	function validateEmail(email) {
