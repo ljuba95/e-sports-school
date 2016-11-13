@@ -25,28 +25,29 @@ $(document).ready(function(){
 		var injectHtml;
 
 		if(location.search != ""){
-			$('#select').val(location.search[1]);
+			$('#select').val(location.search.slice(1,location.search.length));
 			$('#select').css("box-shadow","0 0 5px #34B5BA");
 
-			switch (location.search[1]){
-				case "1":
-					injectHtml = '<div class="col-md-3"><img src="images/old/LOL.png" height="150px" width="150px" class="center-block" style="margin-top:10px;"></div>' + 
-					'<div class="col-md-5">HELOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO\nLOLOLOLOLOLOLOLOL</div>';
+			injectHtml = '<div class="col-md-3"><img src="images/old/' + location.search.slice(1,location.search.length) + '.png" height="150px" width="150px" class="center-block" style="margin-top:10px;"></div>' + 
+					'<div class="col-md-5">text</div>';
+			switch (location.search.slice(1,location.search.length)){
+				case "LOL":
+					injectHtml = injectHtml.replace('text','html tekst za lol');
 					break;
-				case "2":
-					injectHtml = 'todo';
-					break;
-
-				case "3":
-					injectHtml = 'todo';
+				case "DOTA2":
+					injectHtml = injectHtml.replace('text','html tekst za dotu');
 					break;
 
-				case "4":
-					injectHtml = 'todo';
+				case "Starcraft2":
+					injectHtml = injectHtml.replace('text','html tekst za sc2');
 					break;
 
-				case "5":
-					injectHtml = 'todo';
+				case "Hearthstone":
+					injectHtml = injectHtml.replace('text','html tekst za hs');
+					break;
+
+				case "CSGO":
+					injectHtml = injectHtml.replace('text','html tekst za csgo');
 					break;
 
 				default:
