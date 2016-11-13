@@ -255,15 +255,23 @@ select[class=form-control]:focus, textarea:focus {
 
 
 .onama{
-  color: #33383b;
+  margin-top: 20px;
 }
 
 .NoviGod{
   width: 200px; height: 200px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .TheChosenOne{
+  margin-top: 20px;
   width: 200px; height: 200px;
+  margin-left: 50px;
+}
+
+.onama a:hover{
+  color: #30FFE2 !important;
 }
 
 
