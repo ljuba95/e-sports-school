@@ -6,9 +6,28 @@ $(document).ready(function(){
 			speed: 700,
 		});
 
-	if(location.pathname.includes('upis') && location.search !== ""){
-		$('#select').val(location.search[1]);
-		$('#select').css("box-shadow","0 0 5px #34B5BA");
+	$( window ).resize(function(event) {
+  		if($('.slike').css('display') == "none"){
+  			$('#dota2, #LOL, #CSGO, #HS, #SC2').css('display','none');
+  			$('.slike').fadeIn();
+  		}
+	});
+
+	if(window.innerWidth/window.innerHeight < 1.9){
+		$(window).trigger('resize');
+	}
+
+
+	
+
+	if(location.pathname.includes('upis')){
+
+		if(location.search !== ""){
+			$('#select').val(location.search[1]);
+			$('#select').css("box-shadow","0 0 5px #34B5BA");
+		}
+
+		//idemo dalje
 	}
 
 	//==============validacije====================================
@@ -50,6 +69,7 @@ $(document).ready(function(){
 		$("#message").css("color","white");
 	});
 
+	//efekti za slike===========================================
 
 	function showGames(){
 		$("#dota2").css("opacity","1");
@@ -67,70 +87,44 @@ $(document).ready(function(){
 		$("#LOL").css("opacity","0");
 	}
 
+	//get rid of spaghetti code YESSSSSSSS
+
+	function addBlur(src){
+		return src.slice(0,src.length-4) + 'Blur.png';
+	}
+
+	function removeBlur(src){
+		return src.slice(0,src.length-8) + '.png';
+	}
 	
+	$('#dota22, #LOL2, #CSGO2, #HS2, #SC22').on({
+		'mouseover' : function(){
+			$(this).attr('src', addBlur($(this).attr('src')));
+		},
+		'mouseout' : function(){
+			$(this).attr('src',removeBlur($(this).attr('src')));
+		}
+	});
 
 	$('#img-blur').on({
+	    'mouseover' : function() {
+	      	showGames();
+	    },
+	    'mouseout' : function() {
+	  		hideGames();
+	    }
+  	});
+
+	$('#dota2,#CSGO,#LOL,#SC2,#HS').on({
     'mouseover' : function() {
+      	$(this).attr('src',addBlur($(this).attr('src')));
       	showGames();
     },
     'mouseout' : function() {
+  		$(this).attr('src',removeBlur($(this).attr('src')));
   		hideGames();
     }
   });
 
-	$('#dota2').on({
-    'mouseover' : function() {
-      	$(this).attr('src','images/old/DOTA2Blur.png');
-      	showGames();
-    },
-    'mouseout' : function() {
-  		$(this).attr('src','images/old/DOTA2.png');
-  		hideGames();
-    }
-  });
-
-	$('#CSGO').on({
-    'mouseover' : function() {
-      	$(this).attr('src','images/old/CSGOBlur.png');
-      	showGames();
-    },
-    'mouseout' : function() {
-  		$(this).attr('src','images/old/CSGO.png');
-  		hideGames();
-    }
-  });
-
-	$('#LOL').on({
-    'mouseover' : function() {
-      	$(this).attr('src','images/old/LOLBlur.png');
-      	showGames();
-    },
-    'mouseout' : function() {
-  		$(this).attr('src','images/old/LOL.png');
-  		hideGames();
-    }
-  });
-
-	$('#SC2').on({
-    'mouseover' : function() {
-      	$(this).attr('src','images/old/Starcraft2Blur.png');
-      	showGames();
-    },
-    'mouseout' : function() {
-  		$(this).attr('src','images/old/Starcraft2.png');
-  		hideGames();
-    }
-  });
-
-	$('#HS').on({
-    'mouseover' : function() {
-      	$(this).attr('src','images/old/HearthstoneBlur.png');
-      	showGames();
-    },
-    'mouseout' : function() {
-  		$(this).attr('src','images/old/Hearthstone.png');
-  		hideGames();
-    }
-  });
 	
 });

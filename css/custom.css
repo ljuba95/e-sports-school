@@ -11,11 +11,6 @@ body {
     -o-background-size: cover;
 }
 
-.image-bg-fluid-height {
-	background: url('http://res.cloudinary.com/lmn/image/upload/c_limit,e_sharpen:150,f_auto,fl_lossy,h_360,q_80,w_640/v1/gameskinnyc/e/s/p/esports-banner-2ab5e.jpg') no-repeat center center scroll;
-    padding: 100px 0;
-}
-
 .image-bg-fixed-height {
 	background: url('../images/Logo.png') no-repeat center center scroll;
     height: 450px;
@@ -23,11 +18,11 @@ body {
 
 .img-center {
 	margin: 0 auto;
-    display: block;
+  display: block;
 }
 
 section {
-    padding: 75px 0;
+  padding: 75px 0;
 }
 
 .section-heading {
@@ -43,10 +38,14 @@ section {
     margin: 30px 0;
 }
 /* fooooooooooobar */
-
-footer{
-    position: fixed;
-    bottom: 0;
+/*for large screens */
+footer {
+  height: 300px;
+  margin: 0 auto;
+  clear: both;
+  padding: 2em;
+  position: relative;
+  top: 100px;
 }
 
 @media (max-height:800px){
