@@ -279,9 +279,16 @@ select[class=form-control]:focus, textarea:focus {
   margin: 20px;
 }
 
+.upis-links{
+  color: #34B5BA !important;
+}
+
+.upis-links:hover{
+  color: #30FFE2 !important;
+}
+
 .panel-heading [data-toggle="collapse"]:after {
   font-family: 'Glyphicons Halflings';
-  content: "e072"; /* "play" icon */
   float: right;
   color: #F58723;
   font-size: 18px;
@@ -303,6 +310,3 @@ select[class=form-control]:focus, textarea:focus {
   transform: rotate(90deg);
   color: #454444;
 }
-
-
-

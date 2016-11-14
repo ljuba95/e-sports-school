@@ -28,11 +28,17 @@ $(document).ready(function(){
 			$('#select').val(location.search.slice(1,location.search.length));
 			$('#select').css("box-shadow","0 0 5px #34B5BA");
 
-			injectHtml = '<div class="col-md-3"><img src="images/old/' + location.search.slice(1,location.search.length) + '.png" height="150px" width="150px" class="center-block" style="margin-top:10px;"></div>' + 
-					'<div class="col-md-5">text</div>';
+			injectHtml = '<div class="col-md-3"><img src="images/old/' + location.search.slice(1,location.search.length) + '.png" height="150px" width="150px" class="center-block" style="margin-top:50px;"></div>' + 
+					'<div class="col-md-7" style="margin-top:30px">text</div>';
 			switch (location.search.slice(1,location.search.length)){
 				case "LOL":
-					injectHtml = injectHtml.replace('text','html tekst za lol');
+					injectHtml = injectHtml.replace('text','<a href="https://na.leagueoflegends.com/" class="upis-links"><strong>League of Legends</strong></a> je trenutno video igra sa najvećim' +
+						' brojem igrača koji aktivno igraju (oko 40 miliona). Cilj našeg programa jeste da stvorimo profesionalne igrače koji će se takmičiti u američkom ili evropskom LCS-u.' +
+						' Naučićete zašto je "vision control" najbitnija stavka u pravljenju prednosti i održavanju iste ka putu do pobede, tehnike pomoću kojih igrač može uvek biti svestan o dešavanjima'+
+						' na celoj mapi' +
+						' u isto vreme kada je u toku "farm" ili "team fight" faza igre. Zašto dobar draft eksponencijalno povećava šanse za pobedu, bez obzira na performanse igrača u igri, ' +
+						'kako igrač može poboljšati svoje mehaničke i "game-knowledge" sposobnosti, kako, u svakom trenutku, sagledati "win-condition" za trenutnu kompoziciju tima u zavisnosti od kompozicije ' +
+						'protivničkog, zašto su farm i objektivi bitniji od ubistava, kako ostati pribran i ne skretati sa cilja kada se gubi itd. neka su od najznačajnijih znanja koja učenici mogu steći uz našu pomoć.');
 					break;
 				case "DOTA2":
 					injectHtml = injectHtml.replace('text','html tekst za dotu');
