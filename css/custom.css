@@ -2,6 +2,15 @@ body {
     margin-top: 50px;
 }
 
+#wrap{
+  background-image: url('../images/Home.png');
+  margin-top: -70px;
+  background-size: auto 1200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .image-bg-fluid-height,
 .image-bg-fixed-height {
     text-align: center;
