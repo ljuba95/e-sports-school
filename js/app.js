@@ -54,7 +54,7 @@ $(document).ready(function(){
 					break;
 
 				case "DOTA2":
-					injectHtml = injectHtml.replace('text','html tekst za hs');
+					injectHtml = injectHtml.replace('text','html tekst za dotu 2 fak');
 					break;
 
 				case "CSGO":
@@ -157,7 +157,7 @@ $(document).ready(function(){
 	  		hideGames();
 	    }
   	});
-	
+
 	$('#dota2,#CSGO,#LOL,#SC2,#HS').on({
     'mouseover' : function() {
       	$(this).attr('src',addBlur($(this).attr('src')));
