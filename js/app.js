@@ -157,7 +157,7 @@ $(document).ready(function(){
 	  		hideGames();
 	    }
   	});
-
+	
 	$('#dota2,#CSGO,#LOL,#SC2,#HS').on({
     'mouseover' : function() {
       	$(this).attr('src',addBlur($(this).attr('src')));
