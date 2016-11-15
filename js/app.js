@@ -28,32 +28,37 @@ $(document).ready(function(){
 			$('#select').val(location.search.slice(1,location.search.length));
 			$('#select').css("box-shadow","0 0 5px #34B5BA");
 
-			injectHtml = '<div class="col-md-3"><img src="images/old/' + location.search.slice(1,location.search.length) + '.png" height="150px" width="150px" class="center-block" style="margin-top:50px;"></div>' + 
-					'<div class="col-md-7" style="margin-top:30px">text</div>';
+			injectHtml = '<div class="col-md-3"><img src="images/old/' + location.search.slice(1,location.search.length) + '.png" height="200px" width="200px" class="center-block" style="margin-top:50px;"></div>' + 
+					'<div class="col-md-9" style="margin-top:30px; font-size: 18px; font-weight: bold">text</div>';
+					$("body").css("background-image", "url(\"images/" + location.search.slice(1,location.search.length) + ".png\")");
 			switch (location.search.slice(1,location.search.length)){
 				case "LOL":
-					injectHtml = injectHtml.replace('text','<a href="https://na.leagueoflegends.com/" class="upis-links"><strong>League of Legends</strong></a> je trenutno video igra sa najvećim' +
-						' brojem igrača koji aktivno igraju (oko 40 miliona). Cilj našeg programa jeste da stvorimo profesionalne igrače koji će se takmičiti u američkom ili evropskom LCS-u.' +
-						' Naučićete zašto je "vision control" najbitnija stavka u pravljenju prednosti i održavanju iste ka putu do pobede, tehnike pomoću kojih igrač može uvek biti svestan o dešavanjima'+
+					injectHtml = injectHtml.replace('text','<a href="https://na.leagueoflegends.com/" class="upis-links"><strong>League of Legends</strong></a> je trenutno najpopularnija <a class="masterTooltip upis-links" title="Multiplayer Online Battle Arena - Online igra, za više igrača, tipa arene(ringa)."><strong>MOBA</strong></a> video igra sa najvećim' +
+						' brojem igrača koji je aktivno igraju (oko 40 miliona). Cilj našeg programa jeste da stvorimo profesionalne igrače koji će se takmičiti u američkom ili evropskom <a class="masterTooltip upis-links" title="League Championship Series - Glavna League of Legends liga u kojoj se takmiče najbolji profesionalni timovi na svetskoj e-sport sceni."><strong>LCS-u</strong></a>.' +
+						' Naučićete zašto je <a class="masterTooltip upis-links" title="Kontrolisanje vidljivosti na mapi putem wardova."><strong>vision control</strong></a> najbitnija stavka u pravljenju prednosti i održavanju iste ka putu do pobede, tehnike pomoću kojih igrač može uvek biti svestan o dešavanjima'+
 						' na celoj mapi' +
-						' u isto vreme kada je u toku "farm" ili "team fight" faza igre. Zašto dobar draft eksponencijalno povećava šanse za pobedu, bez obzira na performanse igrača u igri, ' +
-						'kako igrač može poboljšati svoje mehaničke i "game-knowledge" sposobnosti, kako, u svakom trenutku, sagledati "win-condition" za trenutnu kompoziciju tima u zavisnosti od kompozicije ' +
-						'protivničkog, zašto su farm i objektivi bitniji od ubistava, kako ostati pribran i ne skretati sa cilja kada se gubi itd. neka su od najznačajnijih znanja koja učenici mogu steći uz našu pomoć.');
+						' u isto vreme kada je u toku <a class="masterTooltip upis-links" title="Prvih 10 do 20 minuta igre, kada igrači većinu vremena troše međusobnom borbom i ubijanjem miniona na odgovarajućim lane-ovima."><strong>laning</strong></a> ili <a class="masterTooltip upis-links" title="Deo igre kada igrači većinu vremena provode grupisanjem i borbom 5 na 5."><strong>team fight</strong></a> faza igre. Kako prevesti vođstvo iz <a class="masterTooltip upis-links" title="Prelazak iz prvih 0-30(early/mid game) minuta igre u završnih 30+(late game) minuta igre."><strong>early/mid game-a u late game</strong></a>, zašto dobar <a class="masterTooltip upis-links" title="Faza pre početka igre, kada timovi biraju heroje koje će igrati."><strong>draft</strong></a> eksponencijalno povećava šanse za pobedu, bez obzira na performanse igrača u igri, ' +
+						'kako igrač može poboljšati svoje <a class="masterTooltip upis-links" title="Sposobnosti igrača da vešto i precizno pomera i klikće mišem, dobro kontroliše kameru, ima veliki procenat pogođenih magija koje se moraju ciljati(skillshot) i brzo pritiska dugmiće na tastaturi i reaguje u odgovarajućim situacijama."><strong>mehaničke sposobnosti</strong></a> i <a class="masterTooltip upis-links" title="Teorijsko znanje o igri, posedovanje znanja o mogućnostima i granicama svih heroja, kada praviti pritisak na objektivima(kulama/zmaju/baronu), kada je dobro umreti za tim i slično."><strong>game-knowledge</strong></a> kako, u svakom trenutku, sagledati <a class="masterTooltip upis-links" title="Na koji način tim, sa odgovarajućim herojima, može konstantno ostvarivati prednost u igri što bi trebalo da rezultira pobedom."><strong>win-condition</strong></a> za trenutnu kompoziciju tima u zavisnosti od kompozicije ' +
+						'protivničkog, zašto su <a class="masterTooltip upis-links" title="Broj ubijenih miniona(farm), kule/baron/zmaj/inhibitori/nexus(objektivi)."><strong>farm i objektivi</strong></a> bitniji od ubistava, kako ostati pribran i ne skretati sa cilja kada se gubi itd. neka su od najznačajnijih znanja koja učenici mogu steći uz našu pomoć.');
 					break;
-				case "DOTA2":
-					injectHtml = injectHtml.replace('text','html tekst za dotu');
+				case "Hearthstone":
+					injectHtml = injectHtml.replace('text','<a href="http://us.battle.net/hearthstone/en/" class="upis-links"><strong>Hearthstone</strong></a>, kao taktička igra u kojoj oba igrača naizmenično igraju po potezima, je interesantna u tome što recept za uspeh leži u korišćenju raspoloživih resursa efikasnije od protivnika. Jedan od prvih i očiglednih resursa sa kojima se igrači susreću jesu karte. Cilj je da igrač konstantno svojim potezima ostvaruje <a class="masterTooltip upis-links" title="Situacija kada igrač poseduje više karata od protivnika u zbiru (na polju i u ruci)."><strong>card advantage</strong></a>.' +
+						' Neki od načina kojima se ovo može postići, na koje se naš obrazovni program fokusira, jesu putem optimalnog korišćenja <a class="masterTooltip upis-links" title="Unikatna magija koju svaki heroj poseduje, sa koštanjem od dve mane."><strong>hero power-a</strong></a> i obavljanjem <a class="masterTooltip upis-links" title="Proces kada igrač iskoristi jednu ili više svojih karata kako bi eliminisao jednu ili više karata protivnika."><strong>trade-ova</strong></a> uz visoki <a class="masterTooltip upis-links" title="Označava vrednost nekog trade-a. Visoki value je, na primer, kada igrač sa nekom svojom kartom, koja košta malo mane, eliminiše jednu kartu protivnika koja košta puno mane ili više karata odjednom i time ostvari card advantage."><strong>value</strong></a>.' +
+						' Sledeći bitan resurs jeste <a class="masterTooltip upis-links" title="Resurs koji određuje koliko dugo će trajati igra, broj poteza dok životni poeni nekog od igrača ne dostignu 0, i time odlučuje koje karte se mogu iskoristiti u kom trenutku."><strong>vreme(tempo)</strong></a>. <a class="masterTooltip upis-links" title="Broj mana kristala koji se moraju potrošiti da bi se aktivirala odgovarajuća karta."><strong>Mana cost</strong></a> karti i optimalno korišćenje mana kristala je usko povezano sa vremenom.' +
+						' Životni poeni su sledeći resurs koji je jako važan, jer uz dobar tempo, prednost u kartama i slično, bez životnih poena igrač nije u mogućnosti da pobedi. Učenici stiču znanje kako da optimalno zamene život, kao resurs, za tempo, card advantage ili <a class="masterTooltip upis-links" title="Prisutnost na tabli, tj. koliko karata igrač poseduje na tabli i koliko mu one omogućavaju da kontroliše igru."><strong>board presence</strong></a>(poslednji jako bitan resurs).' +
+						' Uz naš program, učenici će vladati resursima na vrhunskom nivou i time povećati svoje šanse za pobedu.');
 					break;
 
 				case "Starcraft2":
 					injectHtml = injectHtml.replace('text','html tekst za sc2');
 					break;
 
-				case "Hearthstone":
+				case "DOTA2":
 					injectHtml = injectHtml.replace('text','html tekst za hs');
 					break;
 
 				case "CSGO":
-					injectHtml = injectHtml.replace('text','html tekst za csgo');
+					injectHtml = injectHtml.replace('text','<a href="http://blog.counter-strike.net/" class="upis-links"><strong>Counter Strike: Global Offensive</strong></a> je najpopularnija <a class="masterTooltip upis-links" title="First Person Shooter - Pucačina u prvom licu."><strong>FPS</strong></a> video igra na svetu.');
 					break;
 
 				default:
@@ -169,4 +174,26 @@ $(document).ready(function(){
 			$('.footer-right').css("box-shadow","0 0 5px #34B5BA");
 		});
 	});
+
+
+	//tooltip
+	$('.masterTooltip').hover(function(){
+               
+                var title = $(this).attr('title');
+                $(this).data('tipText', title).removeAttr('title');
+                $('<p class="tooltip"></p>')
+                .text(title)
+                .appendTo('body')
+                .css("opacity","1")
+                .fadeIn('slow');
+        }, function() {
+               
+                $(this).attr('title', $(this).data('tipText'));
+                $('.tooltip').remove();
+        }).mousemove(function(e) {
+                var mousex = e.pageX + 20; 
+                var mousey = e.pageY + 10; 
+                $('.tooltip')
+                .css({ top: mousey, left: mousex });
+        });
 });

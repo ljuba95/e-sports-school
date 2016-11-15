@@ -284,29 +284,18 @@ select[class=form-control]:focus, textarea:focus {
 }
 
 .upis-links:hover{
-  color: #30FFE2 !important;
+  color: white !important;
 }
 
-.panel-heading [data-toggle="collapse"]:after {
-  font-family: 'Glyphicons Halflings';
-  float: right;
-  color: #F58723;
-  font-size: 18px;
-  line-height: 22px;
-  /* rotate "play" icon from > (right arrow) to down arrow */
-  -webkit-transform: rotate(-90deg);
- -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+.tooltip {
+  display:none;
+  position:absolute;
+  border:1px solid white;
+  background-color:#33383b;
+  border-radius:5px;
+  padding:10px;
+  color:#34B5BA;
+  font-size:12px Arial;
 }
 
-.panel-heading [data-toggle="collapse"].collapsed:after {
-  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  color: #454444;
-}
+

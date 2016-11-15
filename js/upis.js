@@ -15,7 +15,6 @@ $(document).ready(function(){
 		}
 		return true;
 	}
-	console.log('asdada');
 	$(".upis form").bind("submit", validateForm);
 
 
