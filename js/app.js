@@ -37,7 +37,7 @@ $(document).ready(function(){
 					$("body").css("background-image", "url(\"images/" + window.location.search.slice(1,window.location.search.length) + ".png\")");
 			switch (window.location.search.slice(1,window.location.search.length)){
 				case "LOL":
-					injectHtml = injectHtml.replace('text','<p><a href="https://na.leagueoflegends.com/" class="upis-links"><strong>&emsp;&emsp;League of Legends</strong></a> je trenutno najpopularnija <a class="masterTooltip upis-links" title="Multiplayer Online Battle Arena - Online igra, za više igrača, tipa arene (ringa)."><strong>MOBA</strong></a> video igra sa najvećim' +
+					injectHtml = injectHtml.replace('text','<p><a class="upis-links" href="https://na.leagueoflegends.com/"><strong>&emsp;&emsp;League of Legends</strong></a> je trenutno najpopularnija <a class="masterTooltip upis-links" title="Multiplayer Online Battle Arena - Online igra, za više igrača, tipa arene (ringa)."><strong>MOBA</strong></a> video igra sa najvećim' +
 						' brojem igrača koji je aktivno igraju (oko 40 miliona). Cilj našeg programa jeste da stvorimo profesionalne igrače koji će se takmičiti u američkom ili evropskom <a class="masterTooltip upis-links" title="League Championship Series - Glavna League of Legends liga u kojoj se takmiče najbolji profesionalni timovi na svetskoj e-sport sceni."><strong>LCS-u</strong></a>.</p>' +
 						'<p>&emsp;&emsp;Naučićete zašto je <a class="masterTooltip upis-links" title="Kontrolisanje vidljivosti na mapi putem wardova."><strong>vision control</strong></a> najbitnija stavka u pravljenju prednosti i održavanju iste ka putu do pobede, tehnike pomoću kojih igrač može uvek biti svestan o dešavanjima'+
 						' na celoj mapi' +

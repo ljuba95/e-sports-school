@@ -382,6 +382,7 @@ select[class=form-control]:focus, textarea:focus {
 
 .upis-links:hover{
   color: #30FFE2 !important;
+  text-decoration: none;
 }
 
 .tooltip {
