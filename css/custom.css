@@ -5,7 +5,15 @@ body {
 #wrap{
   background-image: url('../images/Home.png');
   margin-top: -70px;
-  background-size: auto 1200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#wrap-onama{
+  background-image: url('../images/Home.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -232,8 +240,8 @@ input[type=text], textarea {
 }
  
 input[type=text]:focus, textarea:focus {
-  box-shadow: 0 0 5px #30FFE2;
-  border: 1px #30FFE2;
+  box-shadow: 0 0 5px #34B5BA;
+  border: 1px #34B5BA;
 }
 
 textarea[id=message], textarea {
@@ -244,6 +252,11 @@ textarea[id=message], textarea {
 textarea[id=message]:focus, textarea:focus {
   box-shadow: 0 0 5px #30FFE2;
   border: 1px #30FFE2;
+}
+
+textarea[id=exampleTextarea]:focus, textarea:focus {
+  box-shadow: 0 0 5px #34B5BA;
+  border: 1px #34B5BA;
 }
 
 input[type=email], textarea {
@@ -329,6 +342,12 @@ select[class=form-control]:focus, textarea:focus {
 
 .onama{
   margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.onama-footer{
+  margin-top: auto;
 }
 
 .NoviGod{
@@ -345,6 +364,11 @@ select[class=form-control]:focus, textarea:focus {
 
 .onama a:hover{
   color: #30FFE2 !important;
+}
+
+.upload{
+  color: #34B5BA !important;
+  font-weight: bold;
 }
 
 .faqHeader {
@@ -371,4 +395,12 @@ select[class=form-control]:focus, textarea:focus {
   font-size:12px Arial;
 }
 
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 40px; /*velicina dugmeta*/
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
 

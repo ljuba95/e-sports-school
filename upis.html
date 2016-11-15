@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Profil</a>
+                        <a href="https://immense-fjord-46861.herokuapp.com/login">Profil</a>
                     </li>
                     <li>
                         <a href="upis.html">Upis</a>
@@ -56,7 +56,7 @@
                         <a href="onama.html">O nama</a>
                     </li>
                     <li>
-                        <a href="#">Vesti</a>
+                        <a href="faq.html">FAQ</a>
                     </li>
                     <li>
                         <a href="#" id="contact">Kontakt</a>
@@ -67,29 +67,47 @@
         </div>
         <!-- /.container -->
     </nav>
-    <div class="container">
-        <div class="row opis">
-            
-        </div>
-    </div>
-    <div class="container upis">
-    	<div class="row">
-    		<div class="col-md-6">
-		    <form action="success.html">
+    
+    <div class="container opis">
+    	<div class="row" style="margin-top: 50px">
+            <form action="index.html">
+            <div class="col-md-6">
+                
+                <div class="form-group">
+                    <label for="nameForm">Ime i prezime</label>
+                    <input type="text" class="form-control" id="nameForm" aria-describedby="nameHelp" placeholder="Unesite ime i prezime.">
+                    <small id="nameHelp" class="form-text text-muted" style="color:red"></small>
+                </div>
 
+                <div class="form-group">
+                    <label for="telefonForm">Kontakt telefon</label>
+                    <input type="text" class="form-control" id="telefonForm" aria-describedby="telefonHelp" placeholder="Unesite broj fiksnog ili mobilnog telefona.">
+                    <small id="telefonHelp" class="form-text text-muted" style="color:red"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea">Napišite nešto o sebi</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Poruka"></textarea>
+                </div>
+
+
+              </div>
+
+    		<div class="col-md-6">
+		
 			  <div class="form-group">
 			    <label for="emailForm">E-mail adresa</label>
-			    <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp" placeholder="Unesite vas e-mail">
+			    <input type="email" class="form-control" id="emailForm" aria-describedby="emailHelp" placeholder="Unesite e-mail.">
 			    <small id="emailHelp" class="form-text text-muted" style="color:red"></small>
 			  </div>
 
 			  <div class="form-group">
-			    <label for="password">Sifra</label>
-			    <input type="password" class="form-control" id="password" placeholder="Sifra" required>
+			    <label for="password">Šifra</label>
+			    <input type="password" class="form-control" id="password" placeholder="Unesite šifru." required>
 			  </div>
 
 			  <div class="form-group">
-			    <label for="select">Izaberite igru</label>
+			    <label for="select">Video igra</label>
 			    <select class="form-control" id="select">
 			      <option value="LOL">League of Legends</option>
 			      <option value="CSGO">Counter Strike: Global Offensive</option>
@@ -101,18 +119,28 @@
 			  
 			  <div class="form-group">
 			    <label for="exampleInputFile">Video snimak</label>
-			    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-			    <small id="fileHelp" class="form-text text-muted">Mozete upload-ovati neki vas snimak iz igre, ali nije obavezno.</small>
+			    <input type="file" class="form-control-file btn btn-default" id="exampleInputFile" aria-describedby="fileHelp">
+			    <small id="fileHelp" class="form-text text-muted upload">Ovde možete upload-ovati neki vaš snimak iz igre, ali nije obavezno.</small>
 			  </div>
 
-			  <button type="submit" class="btn btn-info btn-lg"><strong>Prijavi se!</strong></button>
+              </div>
+              <div class="container" style="margin-left: 15px">
+              <div class="row">
+              <div class="col-md-offset-1">
+                 <div class="form-group"  style="margin-top: 50px">
+                    <button type="submit" class="btn btn-info btn-xlarge " id="sbmt" style="margin: center"><strong>Prijavi se!</strong></button>
+                </div>
+                </div>
+                </div>
+              </div>
+
 			</form>
-			</div>
-		</div>
+			
+        </div>
 	</div>
 
 	<!-- Footer -->
-    <footer class="footer-main ">
+    <footer class="footer-main">
 
             <div class="footer-left">
 
@@ -121,21 +149,21 @@
                 <img src="images/Logo.png" id="footer-logo" width="100px" height="100px">
 
                 <p class="footer-links">
-                    <a href="index.html">Pocetna</a>
+                    <a href="index.html">Početna</a>
                     <span>·</span>
                     <a href="onama.html">O nama</a>
                     <span>·</span>
-                    <a href="#">FAQ</a>
+                    <a href="faq.html">FAQ</a>
                 </p>
 
-                <p class="footer-company-name">E-Sport school &copy; 2016</p>
+                <p class="footer-company-name">E-Sport School &copy; 2016</p>
 
                 <div class="footer-icons">
 
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="https://immense-fjord-46861.herokuapp.com/users/4"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
 
                 </div>
 
@@ -147,9 +175,9 @@
 
                 <form action="#" method="post">
 
-                    <input type="text" name="email" placeholder="Email" id="email" />
+                    <input type="text" name="email" placeholder="E-mail" id="email" />
                     <textarea name="message" placeholder="Poruka" id="message"></textarea>
-                    <button type="submit" class="footer-button">Posalji</button>
+                    <button type="submit" class="footer-button">Pošalji</button>
 
                 </form>
 
