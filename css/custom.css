@@ -284,7 +284,7 @@ select[class=form-control]:focus, textarea:focus {
 }
 
 .upis-links:hover{
-  color: white !important;
+  color: #30FFE2 !important;
 }
 
 .tooltip {
