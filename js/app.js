@@ -7,6 +7,10 @@ $(document).ready(function(){
 		});
 
 	$( window ).resize(function(event) {
+		if((window.innerWidth == 1920 || window.innerWidth == 1366) && $('.slike').css('display') != "none"){
+			$('#dota2, #LOL, #CSGO, #HS, #SC2').css('display','block');
+			$('.slike').fadeOut();
+		}
   		if($('.slike').css('display') == "none"){
   			$('#dota2, #LOL, #CSGO, #HS, #SC2').css('display','none');
   			$('.slike').fadeIn();
