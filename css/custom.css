@@ -58,6 +58,7 @@ section {
 /*for large screens */
 footer {
   height: 350px;
+  width: inherit;
   margin: 0 auto;
   clear: both;
   padding: 2em;
