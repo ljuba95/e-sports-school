@@ -171,7 +171,6 @@ body, html{
 }
 .bx-viewport, .bx-wrapper{
     position:relative;
-    width:absolute;
     height:100% !important;
     top:0;
     left:0;
@@ -187,6 +186,7 @@ body, html{
 }
 .bx-wrapper .bx-viewport{
     border: none !important;
+    left: 0px !important;
 }
 .slider-textbox{
     display:block;
@@ -194,8 +194,6 @@ body, html{
     background-color:white;
     opacity:80%;
     width:30%;
-    float:center;
-
 }
 
 .upis form, .fakin-alert{
